@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Customizable Digital Clock</title>
+  <link rel="stylesheet" href="cs/project1.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Customizable Digital Clock</h1>
+
+    <!-- Clock Display -->
+    <div id="clock"></div>
+
+    <!-- Settings Container -->
+    <div class="settings">
+      <!-- Time Format Toggle -->
+      <label for="formatToggle">Time Format:</label>
+      <select id="formatToggle">
+        <option value="12">12-hour</option>
+        <option value="24">24-hour</option>
+      </select>
+
+      <!-- Color Scheme -->
+      <label for="colorPicker">Clock Color:</label>
+      <input type="color" id="colorPicker" />
+
+      <!-- Font Size -->
+      <label for="fontSizeSelect">Font Size:</label>
+      <select id="fontSizeSelect">
+        <option value="40">40px</option>
+        <option value="60">60px</option>
+        <option value="80">80px</option>
+      </select>
+      
+      <!-- Button to save preferences -->
+      <button id="savePrefsBtn">Save Preferences</button>
+    </div>
+
+    <!-- Alarm Section -->
+    <div class="alarm-section">
+      <h2>Set Alarm</h2>
+      <div class="alarm-form">
+        <label for="alarmTime">Time:</label>
+        <input type="time" id="alarmTime" />
+        <button id="setAlarmBtn">Set Alarm</button>
+      </div>
+
+      <h3>Scheduled Alarms</h3>
+      <ul id="alarmList"></ul>
+    </div>
+  </div>
+
+  <script src="js/project1.js"></script>
+</body>
+</html>

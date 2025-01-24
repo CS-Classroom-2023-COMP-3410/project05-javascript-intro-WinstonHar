@@ -1,0 +1,82 @@
+/* Basic reset and styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+  }
+  
+  .container {
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1, h2, h3 {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  #clock {
+    font-size: 60px; /* Default font size; can be changed via JS */
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Settings */
+  .settings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .settings label {
+    margin-right: 5px;
+  }
+  
+  .alarm-section {
+    margin-top: 20px;
+  }
+  
+  .alarm-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  #alarmList {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  #alarmList li {
+    background: #eee;
+    margin: 5px auto;
+    padding: 10px;
+    max-width: 200px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #alarmList button {
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    background: red;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  

@@ -1,0 +1,119 @@
+/* Basic page style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+  }
+  
+  .todo-container {
+    margin-top: 40px;
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+  
+  h1 {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  
+  .add-task-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #taskInput {
+    flex: 1;
+    padding: 6px;
+    font-size: 16px;
+  }
+  
+  #addTaskBtn {
+    padding: 6px 12px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .filter-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #filterSelect {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  
+  /* Task List */
+  #taskList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Individual Task Item */
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fafafa;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 10px;
+    cursor: move;  /* Indicate draggable */
+  }
+  
+  /* Task left side: checkbox + text */
+  .task-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .task-left input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  /* Completed tasks styling */
+  .task-completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  /* Right side: edit, delete */
+  .task-right {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .edit-btn:hover,
+  .delete-btn:hover {
+    color: #000;
+  }
+  
+  /* Edit mode input */
+  .task-edit-input {
+    flex: 1;
+    padding: 6px;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  

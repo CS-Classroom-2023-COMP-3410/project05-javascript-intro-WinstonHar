@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .control-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .canvas-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  canvas {
+    border: 2px solid #ccc;
+    background-color: #fff;
+    cursor: crosshair;
+  }
+  
