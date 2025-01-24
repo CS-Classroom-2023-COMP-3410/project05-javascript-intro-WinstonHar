@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Typing Speed & Accuracy - Sentences</title>
+  <link rel="stylesheet" href="cs/project10.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Typing Speed &amp; Accuracy</h1>
+
+    <!-- Difficulty Selection -->
+    <div class="difficulty-container">
+      <label for="difficultySelect">Difficulty:</label>
+      <select id="difficultySelect">
+        <option value="easy" selected>Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="newTextBtn">New Text</button>
+    </div>
+
+    <!-- Display the random text (each word is a <span>) -->
+    <div id="displayText" class="display-text"></div>
+
+    <!-- User input -->
+    <div class="input-container">
+      <input 
+        type="text" 
+        id="typeInput" 
+        placeholder="Start typing here..." 
+        autocomplete="off"
+      />
+    </div>
+
+    <!-- Stats display -->
+    <div class="stats-container">
+      <p><strong>WPM:</strong> <span id="wpmStat">0</span></p>
+      <p><strong>Accuracy:</strong> <span id="accuracyStat">0</span>%</p>
+    </div>
+
+    <!-- Results / Restart -->
+    <div id="resultsBox" class="results-box hidden">
+      <h2>Results</h2>
+      <p id="resultsText"></p>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+
+  <script src="js/project10.js"></script>
+</body>
+</html>

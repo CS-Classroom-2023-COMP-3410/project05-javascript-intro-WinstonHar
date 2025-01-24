@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="cs/project7.css" />
+</head>
+<body>
+  <div class="calculator-container">
+    <h1>Calculator</h1>
+
+    <!-- Display -->
+    <div class="display" id="display">0</div>
+
+    <!-- Buttons Grid -->
+    <div class="buttons-grid">
+      <!-- Memory Functions -->
+      <button class="btn function-btn" id="mcBtn">MC</button>
+      <button class="btn function-btn" id="mrBtn">MR</button>
+      <button class="btn function-btn" id="mPlusBtn">M+</button>
+      <button class="btn function-btn" id="mMinusBtn">M-</button>
+
+      <!-- Clear, sqrt, percent, divide -->
+      <button class="btn function-btn" id="clearBtn">C</button>
+      <button class="btn function-btn" id="sqrtBtn">√</button>
+      <button class="btn function-btn" id="percentBtn">%</button>
+      <button class="btn operator-btn" data-operator="/">÷</button>
+
+      <!-- Number buttons 7,8,9 and multiply -->
+      <button class="btn number-btn" data-number="7">7</button>
+      <button class="btn number-btn" data-number="8">8</button>
+      <button class="btn number-btn" data-number="9">9</button>
+      <button class="btn operator-btn" data-operator="*">×</button>
+
+      <!-- Number buttons 4,5,6 and minus -->
+      <button class="btn number-btn" data-number="4">4</button>
+      <button class="btn number-btn" data-number="5">5</button>
+      <button class="btn number-btn" data-number="6">6</button>
+      <button class="btn operator-btn" data-operator="-">-</button>
+
+      <!-- Number buttons 1,2,3 and plus -->
+      <button class="btn number-btn" data-number="1">1</button>
+      <button class="btn number-btn" data-number="2">2</button>
+      <button class="btn number-btn" data-number="3">3</button>
+      <button class="btn operator-btn" data-operator="+">+</button>
+
+      <!-- Number button 0, decimal, equals -->
+      <button class="btn number-btn zero-btn" data-number="0">0</button>
+      <button class="btn number-btn" data-number=".">.</button>
+      <button class="btn equals-btn" id="equalsBtn">=</button>
+    </div>
+  </div>
+
+  <script src="js/project7.js"></script>
+</body>
+</html>

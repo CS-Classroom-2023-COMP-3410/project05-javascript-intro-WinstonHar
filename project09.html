@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="cs/project9.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Sorting Algorithm Visualizer</h1>
+
+    <!-- Controls -->
+    <div class="controls">
+      <label for="algorithmSelect">Algorithm:</label>
+      <select id="algorithmSelect">
+        <option value="bubble">Bubble Sort</option>
+        <option value="insertion">Insertion Sort</option>
+      </select>
+
+      <label for="speedRange">Speed:</label>
+      <input type="range" id="speedRange" min="50" max="1500" value="500" />
+
+      <button id="generateBtn">Reset Array</button>
+      <button id="sortBtn">Sort</button>
+    </div>
+
+    <!-- Visualization Container -->
+    <div class="visualizer" id="visualizer"></div>
+
+    <!-- Commentary Section -->
+    <div class="commentary">
+      <h2>Commentary</h2>
+      <div id="commentaryBox"></div>
+    </div>
+  </div>
+
+  <script src="js/project9.js"></script>
+</body>
+</html>

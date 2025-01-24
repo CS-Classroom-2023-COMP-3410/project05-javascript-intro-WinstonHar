@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Adventure Game</title>
+  <link rel="stylesheet" href="cs/project8.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>Text Adventure</h1>
+
+    <!-- Progress Bar / Steps Visualization -->
+    <div class="progress-container">
+      <div id="progressBar" class="progress-bar"></div>
+      <p id="progressText" class="progress-text">Progress: 0%</p>
+    </div>
+
+    <!-- Story Text Area -->
+    <div id="storyText" class="story-text">
+      <!-- Filled dynamically in script.js -->
+    </div>
+
+    <!-- Choices Buttons -->
+    <div id="choicesContainer" class="choices-container">
+      <!-- Filled dynamically in script.js -->
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="saveBtn">Save Game</button>
+      <button id="resetBtn">Restart</button>
+    </div>
+  </div>
+
+  <script src="js/project8.js"></script>
+</body>
+</html>

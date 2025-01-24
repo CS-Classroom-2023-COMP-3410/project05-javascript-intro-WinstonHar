@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiple Choice Quiz</title>
+  <link rel="stylesheet" href="cs/project4.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Multiple Choice Quiz</h1>
+    
+    <!-- Quiz form (questions inserted dynamically) -->
+    <form id="quizForm">
+      <div id="questionsContainer"></div>
+      
+      <!-- Button to submit and see results -->
+      <button type="button" id="submitBtn">Submit Quiz</button>
+    </form>
+
+    <!-- Results Section (hidden by default) -->
+    <div id="results" class="hidden">
+      <h2>Results</h2>
+      <p id="scoreText"></p>
+      <button id="reviewBtn">Review Answers</button>
+    </div>
+  </div>
+
+  <script src="js/project4.js"></script>
+</body>
+</html>

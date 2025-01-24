@@ -1,0 +1,92 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  /* Quiz container styling */
+  .quiz-container {
+    width: 600px;
+    background: #fff;
+    padding: 20px 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #questionsContainer {
+    margin-bottom: 20px;
+  }
+  
+  .question-block {
+    margin-bottom: 20px;
+  }
+  
+  .question-block h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  
+  .answers {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* A bit of spacing for radio inputs */
+  .answers label {
+    cursor: pointer;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #submitBtn {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  #reviewBtn {
+    margin-top: 20px;
+    background-color: #2196f3;
+    color: #fff;
+  }
+  
+  /* Results section styling */
+  #results {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Feedback Classes */
+  .correct-answer {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .incorrect-answer {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Hidden helper class */
+  .hidden {
+    display: none;
+  }
+  

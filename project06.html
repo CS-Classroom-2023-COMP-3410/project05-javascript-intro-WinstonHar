@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Periodic Table</title>
+  <link rel="stylesheet" href="cs/project6.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Periodic Table</h1>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search by name, symbol, or atomic number..."
+      />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Periodic Table Grid -->
+    <div class="periodic-grid" id="periodicGrid">
+      <!-- Dynamically filled by script.js -->
+    </div>
+
+    <!-- Element Details Panel -->
+    <div class="element-details hidden" id="detailsPanel">
+      <button id="closeDetailsBtn">Close</button>
+      <h2 id="detailsName"></h2>
+      <p><strong>Symbol:</strong> <span id="detailsSymbol"></span></p>
+      <p><strong>Atomic Number:</strong> <span id="detailsNumber"></span></p>
+      <p><strong>Group:</strong> <span id="detailsGroup"></span></p>
+    </div>
+  </div>
+
+  <script src="js/project6.js"></script>
+</body>
+</html>
